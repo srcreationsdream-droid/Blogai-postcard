@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-bengali-serif: 'Noto Serif Bengali', serif;
+    --font-bengali-calligraphy: 'Galada', cursive;
+    --font-bengali-vintage: 'Tiro Bangla', serif;
+    --font-bengali-modern: 'Anek Bangla', sans-serif;
+    --font-vintage-serif: 'Cinzel', 'Playfair Display', serif;
+    --font-typewriter: 'Courier Prime', monospace;
+  }
+}
+
+.font-bengali-serif {
+  font-family: 'Noto Serif Bengali', serif;
+}
+
+.font-bengali-calligraphy {
+  font-family: 'Galada', cursive;
+}
+
+.font-bengali-vintage {
+  font-family: 'Tiro Bangla', 'Noto Serif Bengali', serif;
+}
+
+.font-bengali-modern {
+  font-family: 'Anek Bangla', sans-serif;
+}
+
+.font-vintage-serif {
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+}
+
+.font-typewriter {
+  font-family: 'Courier Prime', monospace;
+}
+
+/* Vintage Paper & Noise Textures */
+.vintage-paper-bg {
+  background-color: #f7f1e3;
+  background-image: radial-gradient(#d5c5a3 0.75px, transparent 0.75px), radial-gradient(#d5c5a3 0.75px, #f7f1e3 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.vintage-paper-aged {
+  background: radial-gradient(circle at 50% 50%, #faf4e6 0%, #ede0c4 70%, #d8c29d 100%);
+}
+
+.vintage-border-gold {
+  border: 2px solid #b89758;
+  outline: 1px solid rgba(184, 151, 88, 0.4);
+  outline-offset: 4px;
+}
+
+.vintage-border-double {
+  border: 3px double #8c6d3b;
+}
+
+.vintage-border-postal {
+  background-image: repeating-linear-gradient(135deg, #a32222 0, #a32222 14px, transparent 14px, transparent 20px, #1a365d 20px, #1a365d 34px, transparent 34px, transparent 40px);
+}
+
+/* Postcard Effects */
+.effect-sepia {
+  filter: sepia(0.65) contrast(1.05) brightness(0.95);
+}
+
+.effect-old-paper {
+  filter: sepia(0.35) saturate(0.85) contrast(1.1) brightness(0.97);
+}
+
+.effect-faded {
+  filter: contrast(0.85) brightness(1.08) saturate(0.7);
+}
+
+.effect-bw {
+  filter: grayscale(1) contrast(1.2) brightness(0.95);
+}
+
+.effect-warm-vintage {
+  filter: sepia(0.4) saturate(1.3) hue-rotate(-10deg) brightness(0.98);
+}
+
+/* Scrollbar aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141210;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3e3223;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a4933;
+}
